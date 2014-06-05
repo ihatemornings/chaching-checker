@@ -1,0 +1,80 @@
+## Chaching Checker config ##
+
+# Email
+#
+# Sending accidental email is really annoying, so here you can set exactly
+# which emails are sent during testing or otherwise. Set
+# send_emails_to_buyers to true to start using the script for realz.
+# 
+send_emails_to_buyers: false
+send_first_buyer_email_to_me: true
+send_report_email_to_me: true
+
+# Email details
+#
+# Send reports and test emails to my_email.
+# Send all emails from "from_name" <from_email>
+# Use subject as the subject line of the email sent to buyers.
+#
+my_name: Jimbo
+my_email: me@whatever.com
+from_name: Jimbo and the Whatevers
+from_email: me@whatever.com
+subject: Your bonus tracks
+
+# Debugging
+#
+# If you set debug_logging to true you'll see more log messages, and your
+# codes file won't be marked as used.
+#
+debug_logging: true
+
+# Gmail details
+#
+# Set gmail_label to the name of the Gmail label/folder you want to check.
+# To label your Cha-ching emails for a particular release, log into Gmail
+# on the web and search for this:
+#
+#     from:(noreply@bandcamp.com) "just bought" "[title of your release]"
+#
+# Click the down arrow at the right end of the search box and click the
+# "Create a filter with this search" link. Choose "Apply the label", "New
+# label" and enter the label name. Check the "Also apply filter to n
+# matching conversations" box and choose "Create filter".
+#
+gmail_username: me@whatever.com
+gmail_password: t0psikrit
+gmail_label: Album sales
+
+# CSV
+#
+# Use the "export" link to download the CSV of codes from your Bandcamp
+# tools page and save it in the same folder as this script.
+#
+csv_filename: codes.csv
+
+# Start date
+#
+# The script will only respond to cha-ching emails received after this
+# date and time. If in doubt, set it to right now. The format is:
+#
+#     YYYY-MM-DD hh:mm
+#
+start_date: 2014-05-31 16:30
+
+# Email template
+#
+# The email template is a plain text file and the contents will be sent as a
+# plain text email to the buyer. The template must include the symbol
+# {{code}} which will be replaced with a download code from your codes file.
+# You can also use {{name}}, which will be replaced by the buyer's first
+# name.
+#
+email_template: email_template.txt
+
+# Fallback name
+#
+# If the script can't easily find the buyer's first name, it will address
+# the email to "Dear [this]":
+#
+fallback_name: loyal fan with no easily decipherable name on your PayPal account

@@ -1,0 +1,14 @@
+Hi {{name}},
+
+Here's your download code for the Not Kings bonus tracks!
+
+{{code}}
+
+You can redeem it at http://candysays.bandcamp.com/yum
+
+Thanks again!
+
+Ben & Juju
+x
+
+http://candysays.it
